@@ -25,7 +25,8 @@ public class BombTick : MonoBehaviour {
 	IEnumerator playTick(){
 		while (count != 3) {
 			tick.PlayOneShot (tick.clip);
-			yield return new WaitForSeconds (0);
+			//yield return new WaitForSeconds (0);
+			yield return null;
 			//tick.PlayOneShot (tick.clip);
 			count++;
 		}
