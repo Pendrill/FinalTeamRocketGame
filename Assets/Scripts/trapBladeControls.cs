@@ -8,6 +8,9 @@ public class trapBladeControls : MonoBehaviour {
 	private float stopSwingingAtThisTime = 0.0f;
 	//speed adjustor
 	public float swingSpeed = 1.0f;
+	public Button bladeButton;
+
+
 
 
 	// Update is called once per frame
@@ -15,11 +18,12 @@ public class trapBladeControls : MonoBehaviour {
 
 	
 
+
 		//if current time is less than the current time +2 seconds, activate
 		if (Time.time < stopSwingingAtThisTime) {
 
 
-
+			bladeButton.interactable = false;
 			transform.Rotate (transform.forward * Time.deltaTime * swingSpeed);
 
 
@@ -27,7 +31,7 @@ public class trapBladeControls : MonoBehaviour {
 
 
 		}
-
+		bladeButton.interactable = true;
 		
 
 	}
