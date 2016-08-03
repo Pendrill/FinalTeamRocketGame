@@ -18,7 +18,9 @@ public class rotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		// you should write comments about what this code does
 		delay += Time.deltaTime;
+		// you should write comments about what this code does
 		if(Input.GetKeyDown(KeyCode.LeftArrow)&&ourrigidbody.angularVelocity==0f&&delay>=delaysecs){
 			inrotation = true;
 			ourrigidbody.AddTorque(torque);
@@ -28,9 +30,10 @@ public class rotate : MonoBehaviour {
 			ourrigidbody.AddTorque(-1f*torque);
 
 		}
+		// you should write comments about what this code does
 		if (inrotation == true) {
 			counter += Time.deltaTime;
-		
+			// you should write comments about what this code does
 			if (counter >= rotationtime) {
 				ourrigidbody.angularVelocity = 0;
 				counter = 0;
