@@ -17,7 +17,9 @@ public class toggleplatform : MonoBehaviour {
 		otherspriterenderer = otherplatform.GetComponent<SpriteRenderer> ();
 		ourcollider = ourplatform.GetComponent<Collider2D> ();
 		othercollider = otherplatform.GetComponent<Collider2D> ();
-		ourplatform.SetActive (false);
+		if (invisiblefromstart) {
+			ourplatform.SetActive (false);
+		}
 	
 	
 	
@@ -37,7 +39,6 @@ public class toggleplatform : MonoBehaviour {
 		if (other.gameObject.tag == "Player") {
 			Debug.Log ("SWTITCHED");
 			ourplatform.SetActive (true);
-			ourspriterenderer.sprite = platformsprite;
 			otherplatform.SetActive (false);
 		}
 	}
