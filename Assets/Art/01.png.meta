@@ -1,11 +1,11 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
-guid: 0cf4f5384722daf4d8bbebff28a997b7
-timeCreated: 1470249708
-=======
 guid: 470355965146c924d838735a4c973921
 timeCreated: 1470250778
->>>>>>> bd37c895dd7c6ddac1b2ad5a3008e27fea905f72
+=======
+guid: 8afe2cdb37301df45b7061079680f19c
+timeCreated: 1470249709
+>>>>>>> origin/Omar'sBranch
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
@@ -55,9 +55,9 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
 <<<<<<< HEAD
-=======
     serializedVersion: 2
->>>>>>> bd37c895dd7c6ddac1b2ad5a3008e27fea905f72
+=======
+>>>>>>> origin/Omar'sBranch
     sprites: []
     outline: []
   spritePackingTag: 
