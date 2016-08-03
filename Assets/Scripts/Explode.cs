@@ -13,14 +13,19 @@ public class Explode : MonoBehaviour {
 		StartCoroutine (smokeDestroy ());
 	}
 	void OnTriggerEnter2D ( Collider2D exploder){
-		Debug.Log ("Hello");
+		//Use better debugging!
+		//Debug.Log ("Hello");
+		Debug.Log ("Explode.cs's on trigger firing")
 		if (exploder.tag == "Player") {
 			Destroy (exploder.gameObject);
 		}
 
 	}
 	void OnTriggerStay2D ( Collider2D exploder){
-		Debug.Log ("Hello");
+		//Use better debugging!
+		//Debug.Log ("Hello");
+		Debug.Log ("Explode.cs's trigger stay firing")
+		
 		if (exploder.tag == "Player") {
 			Destroy (exploder.gameObject);
 		}
