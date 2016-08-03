@@ -1,22 +1,24 @@
 fileFormatVersion: 2
-guid: 70ee64e38dc5a124d941f86d9393af23
-timeCreated: 1470240506
+guid: 319607391c41a3d48aed64fc91d1b7e0
+timeCreated: 1470246915
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: CharacterIdleSpriteSheet_0
-    21300002: CharacterIdleSpriteSheet_1
-    21300004: CharacterIdleSpriteSheet_2
-    21300006: CharacterIdleSpriteSheet_3
-    21300008: CharacterIdleSpriteSheet_4
-    21300010: CharacterIdleSpriteSheet_5
-    21300012: CharacterIdleSpriteSheet_6
-    21300014: CharacterIdleSpriteSheet_7
-    21300016: CharacterIdleSpriteSheet_8
-    21300018: CharacterIdleSpriteSheet_9
-    21300020: CharacterIdleSpriteSheet_10
-    21300022: CharacterIdleSpriteSheet_11
-    21300024: CharacterIdleSpriteSheet_12
+    21300000: UpdatedPlayerIdleSpriteSheet_0
+    21300002: UpdatedPlayerIdleSpriteSheet_1
+    21300004: UpdatedPlayerIdleSpriteSheet_2
+    21300006: UpdatedPlayerIdleSpriteSheet_3
+    21300008: UpdatedPlayerIdleSpriteSheet_4
+    21300010: UpdatedPlayerIdleSpriteSheet_5
+    21300012: UpdatedPlayerIdleSpriteSheet_6
+    21300014: UpdatedPlayerIdleSpriteSheet_7
+    21300016: UpdatedPlayerIdleSpriteSheet_8
+    21300018: UpdatedPlayerIdleSpriteSheet_9
+    21300020: UpdatedPlayerIdleSpriteSheet_10
+    21300022: UpdatedPlayerIdleSpriteSheet_11
+    21300024: UpdatedPlayerIdleSpriteSheet_12
+    21300026: UpdatedPlayerIdleSpriteSheet_13
+    21300028: UpdatedPlayerIdleSpriteSheet_14
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -63,7 +65,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: CharacterIdleSpriteSheet_0
+    - name: UpdatedPlayerIdleSpriteSheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -80,7 +82,7 @@ TextureImporter:
         - {x: -18.5, y: -26.5}
         - {x: 6.5, y: -26.5}
         - {x: 6.5, y: 26.5}
-    - name: CharacterIdleSpriteSheet_1
+    - name: UpdatedPlayerIdleSpriteSheet_1
       rect:
         serializedVersion: 2
         x: 53
@@ -98,7 +100,7 @@ TextureImporter:
         - {x: -21.5, y: -26.5}
         - {x: 6.5, y: -26.5}
         - {x: 6.5, y: 23.5}
-    - name: CharacterIdleSpriteSheet_2
+    - name: UpdatedPlayerIdleSpriteSheet_2
       rect:
         serializedVersion: 2
         x: 106
@@ -120,7 +122,7 @@ TextureImporter:
         - {x: 7.5, y: -1.5}
         - {x: 7.5, y: 25.5}
         - {x: 4.5, y: 26.5}
-    - name: CharacterIdleSpriteSheet_3
+    - name: UpdatedPlayerIdleSpriteSheet_3
       rect:
         serializedVersion: 2
         x: 159
@@ -138,7 +140,7 @@ TextureImporter:
         - {x: 6.5, y: -26.5}
         - {x: 7.5, y: -8.5}
         - {x: 7.5, y: 26.5}
-    - name: CharacterIdleSpriteSheet_4
+    - name: UpdatedPlayerIdleSpriteSheet_4
       rect:
         serializedVersion: 2
         x: 212
@@ -156,7 +158,7 @@ TextureImporter:
         - {x: -17.5, y: -26.5}
         - {x: 7.5, y: -26.5}
         - {x: 7.5, y: 26.5}
-    - name: CharacterIdleSpriteSheet_5
+    - name: UpdatedPlayerIdleSpriteSheet_5
       rect:
         serializedVersion: 2
         x: 265
@@ -173,7 +175,7 @@ TextureImporter:
         - {x: -10.5, y: -26.5}
         - {x: 7.5, y: -26.5}
         - {x: 7.5, y: 26.5}
-    - name: CharacterIdleSpriteSheet_6
+    - name: UpdatedPlayerIdleSpriteSheet_6
       rect:
         serializedVersion: 2
         x: 318
@@ -195,7 +197,7 @@ TextureImporter:
         - {x: 6.5, y: -24.5}
         - {x: 7.5, y: -5.5}
         - {x: 7.5, y: 9.5}
-    - name: CharacterIdleSpriteSheet_7
+    - name: UpdatedPlayerIdleSpriteSheet_7
       rect:
         serializedVersion: 2
         x: 371
@@ -206,16 +208,55 @@ TextureImporter:
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -18.5, y: 26.5}
-        - {x: -24.5, y: 14.5}
-        - {x: -24.5, y: -20.5}
-        - {x: -10.5, y: -26.5}
-        - {x: 7.5, y: -26.5}
-        - {x: 7.5, y: 26.5}
-    - name: CharacterIdleSpriteSheet_8
+      - - {x: 5.5, y: 26.5}
+        - {x: -9.5, y: 26.5}
+        - {x: -15.5, y: 19.5}
+        - {x: -15.5, y: 15.5}
+        - {x: -25.5, y: 3.5}
+        - {x: -26.5, y: 1.5}
+        - {x: -26.5, y: -13.5}
+        - {x: -21.5, y: -26.5}
+        - {x: 6.5, y: -26.5}
+        - {x: 7.5, y: -18.5}
+        - {x: 7.5, y: 22.5}
+    - name: UpdatedPlayerIdleSpriteSheet_8
       rect:
         serializedVersion: 2
         x: 424
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13.5, y: 26.5}
+        - {x: -26.5, y: 12.5}
+        - {x: -26.5, y: -22.5}
+        - {x: -24.5, y: -26.5}
+        - {x: 7.5, y: -26.5}
+        - {x: 7.5, y: 26.5}
+    - name: UpdatedPlayerIdleSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16.5, y: 26.5}
+        - {x: -24.5, y: 16.5}
+        - {x: -24.5, y: -20.5}
+        - {x: -19.5, y: -26.5}
+        - {x: 7.5, y: -26.5}
+        - {x: 7.5, y: 26.5}
+    - name: UpdatedPlayerIdleSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 530
         y: 0
         width: 53
         height: 53
@@ -230,10 +271,10 @@ TextureImporter:
         - {x: -17.5, y: -26.5}
         - {x: 7.5, y: -26.5}
         - {x: 7.5, y: 26.5}
-    - name: CharacterIdleSpriteSheet_9
+    - name: UpdatedPlayerIdleSpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 477
+        x: 583
         y: 0
         width: 53
         height: 53
@@ -248,10 +289,10 @@ TextureImporter:
         - {x: 6.5, y: -26.5}
         - {x: 7.5, y: -8.5}
         - {x: 7.5, y: 26.5}
-    - name: CharacterIdleSpriteSheet_10
+    - name: UpdatedPlayerIdleSpriteSheet_12
       rect:
         serializedVersion: 2
-        x: 530
+        x: 636
         y: 0
         width: 53
         height: 53
@@ -270,10 +311,10 @@ TextureImporter:
         - {x: 7.5, y: -1.5}
         - {x: 7.5, y: 25.5}
         - {x: 4.5, y: 26.5}
-    - name: CharacterIdleSpriteSheet_11
+    - name: UpdatedPlayerIdleSpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 583
+        x: 689
         y: 0
         width: 53
         height: 53
@@ -288,10 +329,10 @@ TextureImporter:
         - {x: -21.5, y: -26.5}
         - {x: 6.5, y: -26.5}
         - {x: 6.5, y: 23.5}
-    - name: CharacterIdleSpriteSheet_12
+    - name: UpdatedPlayerIdleSpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 636
+        x: 742
         y: 0
         width: 53
         height: 53
