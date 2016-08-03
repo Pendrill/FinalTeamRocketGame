@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player_Controller : MonoBehaviour {
     //Floats
-    public float maxSpeed = 3;
+    public float maxSpeed = 300;
     public float speed = 50f;
     public float jumpPower = 150;
     public float dashPower = 200;
@@ -98,7 +98,7 @@ public class Player_Controller : MonoBehaviour {
         Vector3 easeVelocity = playerRB.velocity;
         easeVelocity.y = playerRB.velocity.y;
         easeVelocity.z = 0.0f;
-        easeVelocity.x *= 0.75f;
+        easeVelocity.x *= 0.5f;
 
         //float hor = Input.GetAxis("Horizontal");
         float hor = 0;
@@ -120,26 +120,13 @@ public class Player_Controller : MonoBehaviour {
         // moves the player
         playerRB.AddForce((Vector2.right * speed) * hor);
         //float movex = Input.GetAxis("Horizontal");
-        //float movey = Input.GetAxis("Vertical");
        //playerRB.velocity = new Vector2(movex * maxSpeed,playerRB.velocity.y);
 
         // create fake friction on x axis
-        //if (grounded) {
-            playerRB.velocity = easeVelocity;
-        //}
+        playerRB.velocity = easeVelocity;
+       
 
-
-        // Limiting the player speed
-        if (playerRB.velocity.x > maxSpeed)
-        {
-
-          //playerRB.velocity = new Vector2(maxSpeed, playerRB.velocity.y);
-
-        }
-        if (playerRB.velocity.x < -maxSpeed)
-        {
-            //playerRB.velocity = new Vector2(-maxSpeed, playerRB.velocity.y);
-        }
+       
 
     }
 }
