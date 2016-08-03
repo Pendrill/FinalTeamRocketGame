@@ -14,6 +14,7 @@ public class MoveBomb : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//What is this doing?
 		if (isPlayerMovingBomb) {
 			Vector3 cursorPositionInWorld = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 			cursorPositionInWorld.z = 0f;
@@ -22,25 +23,30 @@ public class MoveBomb : MonoBehaviour {
 				animator.SetTrigger ("BombCountdown");
 				dropBomb ();
 			}
+		//Good place for a comment
 		} else {
 			StartCoroutine (bombExplode());
+			//This Debug.Log isn't exactly informative.
 			Debug.Log ("When does this appear");
 		}
 	}
 	public void dropBomb(){
+		//Comment this function!
 		isPlayerMovingBomb = false;
 	}
 	public bool isBombDroped(){
+		//This one too.
 		if (isPlayerMovingBomb == false) {
 			return true;
 		} else {
 			return false;
 		}
 	}
+	
 	IEnumerator bombExplode(){
-		Debug.Log ("test");
+		//Debug.Log ("test");
 		yield return new WaitForSeconds (3);
-		Debug.Log ("test after 5 seconds");
+		//Debug.Log ("test after 5 seconds");
 		Instantiate (Explosion, transform.position, Explosion.transform.rotation);
 		Destroy (this.gameObject);
 
