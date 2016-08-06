@@ -15,7 +15,7 @@ public class Explode : MonoBehaviour {
 	void OnTriggerEnter2D ( Collider2D exploder){
 		//Use better debugging!
 		//Debug.Log ("Hello");
-		Debug.Log ("Explode.cs's on trigger firing")
+		Debug.Log ("Explode.cs's on trigger firing");
 		if (exploder.tag == "Player") {
 			Destroy (exploder.gameObject);
 		}
@@ -24,7 +24,7 @@ public class Explode : MonoBehaviour {
 	void OnTriggerStay2D ( Collider2D exploder){
 		//Use better debugging!
 		//Debug.Log ("Hello");
-		Debug.Log ("Explode.cs's trigger stay firing")
+		Debug.Log ("Explode.cs's trigger stay firing");
 		
 		if (exploder.tag == "Player") {
 			Destroy (exploder.gameObject);
