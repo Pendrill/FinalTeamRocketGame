@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: 1f5188d3e0cebad4082ce8a3f3d40961
+timeCreated: 1470461538
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CharacterWalkingAnimSheet_0
+    21300002: CharacterWalkingAnimSheet_1
+    21300004: CharacterWalkingAnimSheet_2
+    21300006: CharacterWalkingAnimSheet_3
+    21300008: CharacterWalkingAnimSheet_4
+    21300010: CharacterWalkingAnimSheet_5
+    21300012: CharacterWalkingAnimSheet_6
+    21300014: CharacterWalkingAnimSheet_7
+    21300016: CharacterWalkingAnimSheet_8
+    21300018: CharacterWalkingAnimSheet_9
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: CharacterWalkingAnimSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 26.5}
+        - {x: -11.5, y: 26.5}
+        - {x: -18.5, y: 9.5}
+        - {x: -18.5, y: -26.5}
+        - {x: 4.5, y: -26.5}
+        - {x: 9.5, y: -19.5}
+        - {x: 9.5, y: -9.5}
+        - {x: 8.5, y: 25.5}
+    - name: CharacterWalkingAnimSheet_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 26.5}
+        - {x: -13.5, y: 23.5}
+        - {x: -26.5, y: -12.5}
+        - {x: -26.5, y: -26.5}
+        - {x: 13.5, y: -26.5}
+        - {x: 14.5, y: -25.5}
+        - {x: 14.5, y: 15.5}
+        - {x: 12.5, y: 26.5}
+    - name: CharacterWalkingAnimSheet_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -15.5, y: 26.5}
+        - {x: -26.5, y: 4.5}
+        - {x: -26.5, y: -25.5}
+        - {x: -25.5, y: -26.5}
+        - {x: 18.5, y: -26.5}
+        - {x: 18.5, y: 18.5}
+        - {x: 5.5, y: 26.5}
+    - name: CharacterWalkingAnimSheet_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 26.5}
+        - {x: -13.5, y: 23.5}
+        - {x: -26.5, y: -12.5}
+        - {x: -26.5, y: -26.5}
+        - {x: 14.5, y: -26.5}
+        - {x: 14.5, y: 26.5}
+    - name: CharacterWalkingAnimSheet_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 7.5, y: 26.5}
+        - {x: -11.5, y: 26.5}
+        - {x: -18.5, y: 9.5}
+        - {x: -18.5, y: -26.5}
+        - {x: 4.5, y: -26.5}
+        - {x: 9.5, y: -19.5}
+        - {x: 9.5, y: -9.5}
+        - {x: 8.5, y: 25.5}
+    - name: CharacterWalkingAnimSheet_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 26.5}
+        - {x: -15.5, y: 25.5}
+        - {x: -18.5, y: -4.5}
+        - {x: -18.5, y: -26.5}
+        - {x: 6.5, y: -26.5}
+        - {x: 6.5, y: 26.5}
+    - name: CharacterWalkingAnimSheet_6
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 26.5}
+        - {x: -9.5, y: 26.5}
+        - {x: -13.5, y: 23.5}
+        - {x: -26.5, y: -12.5}
+        - {x: -26.5, y: -26.5}
+        - {x: 10.5, y: -26.5}
+        - {x: 10.5, y: 3.5}
+        - {x: 7.5, y: 25.5}
+    - name: CharacterWalkingAnimSheet_7
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17.5, y: 26.5}
+        - {x: -26.5, y: 12.5}
+        - {x: -26.5, y: -26.5}
+        - {x: 18.5, y: -26.5}
+        - {x: 18.5, y: -2.5}
+        - {x: 10.5, y: 26.5}
+    - name: CharacterWalkingAnimSheet_8
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 4.5, y: 26.5}
+        - {x: -9.5, y: 26.5}
+        - {x: -13.5, y: 23.5}
+        - {x: -26.5, y: -12.5}
+        - {x: -26.5, y: -26.5}
+        - {x: 10.5, y: -26.5}
+        - {x: 10.5, y: 3.5}
+        - {x: 7.5, y: 25.5}
+    - name: CharacterWalkingAnimSheet_9
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 0
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 26.5}
+        - {x: -15.5, y: 25.5}
+        - {x: -18.5, y: -4.5}
+        - {x: -18.5, y: -26.5}
+        - {x: 6.5, y: -26.5}
+        - {x: 6.5, y: 26.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
