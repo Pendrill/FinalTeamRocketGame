@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player_Controller : MonoBehaviour {
     //Floats
-    public float maxSpeed = 3;
+    public float maxSpeed = 300;
     public float speed = 50f;
     public float jumpPower = 150;
     public float dashPower = 200;
@@ -14,12 +14,14 @@ public class Player_Controller : MonoBehaviour {
     public bool canDoubleJump;
 
     private Rigidbody2D playerRB;
+	private SpriteRenderer playerSR;
     private Animator anim;
 
 	// Use this for initialization
 	void Start () {
         playerRB = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
+		playerSR = gameObject.GetComponent<SpriteRenderer> ();
 
 
 
@@ -57,12 +59,18 @@ public class Player_Controller : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Q))
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            //transform.localScale = new Vector3(-1, 1, 1);
+			if (playerSR.flipX == false) {
+				playerSR.flipX = true;
+			}
 
         }
 		if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.E))
         {
-            transform.localScale = new Vector3(1, 1, 1);
+			if (playerSR.flipX == true) {
+				playerSR.flipX = false;
+			}
+            //transform.localScale = new Vector3(1, 1, 1);
 
         }
         if (Input.GetKeyDown(KeyCode.Space)) {
@@ -98,7 +106,7 @@ public class Player_Controller : MonoBehaviour {
         Vector3 easeVelocity = playerRB.velocity;
         easeVelocity.y = playerRB.velocity.y;
         easeVelocity.z = 0.0f;
-        easeVelocity.x *= 0.75f;
+        easeVelocity.x *= 0.5f;
 
         //float hor = Input.GetAxis("Horizontal");
         float hor = 0;
@@ -120,26 +128,13 @@ public class Player_Controller : MonoBehaviour {
         // moves the player
         playerRB.AddForce((Vector2.right * speed) * hor);
         //float movex = Input.GetAxis("Horizontal");
-        //float movey = Input.GetAxis("Vertical");
        //playerRB.velocity = new Vector2(movex * maxSpeed,playerRB.velocity.y);
 
         // create fake friction on x axis
-        //if (grounded) {
-            playerRB.velocity = easeVelocity;
-        //}
+        playerRB.velocity = easeVelocity;
+       
 
-
-        // Limiting the player speed
-        if (playerRB.velocity.x > maxSpeed)
-        {
-
-          //playerRB.velocity = new Vector2(maxSpeed, playerRB.velocity.y);
-
-        }
-        if (playerRB.velocity.x < -maxSpeed)
-        {
-            //playerRB.velocity = new Vector2(-maxSpeed, playerRB.velocity.y);
-        }
+       
 
     }
 }
