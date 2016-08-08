@@ -15,12 +15,14 @@ public class Player_Controller : MonoBehaviour {
 	public bool rolling;
 
     private Rigidbody2D playerRB;
+	private SpriteRenderer playerSR;
     private Animator anim;
 
 	// Use this for initialization
 	void Start () {
         playerRB = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
+		playerSR = gameObject.GetComponent<SpriteRenderer> ();
 
 
 
@@ -58,20 +60,31 @@ public class Player_Controller : MonoBehaviour {
 			} 
 
         }
-		if (Input.GetKey (KeyCode.E) && coolDown >= 2) {
-			rolling = true;
-		} else {
-			rolling = false;
-		}
+//		if (Input.GetKeyDown(KeyCode.E)) {
+//			rolling = true;
+//		} else {
+//			rolling = false;
+//		}
+//		if (Input.GetKeyDown(KeyCode.Q)) {
+//			rolling = true;
+//		} else {
+//			rolling = false;
+//		}
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Q))
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            //transform.localScale = new Vector3(-1, 1, 1);
+			if (playerSR.flipX == false) {
+				playerSR.flipX = true;
+			}
 
         }
 		if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.E))
         {
-            transform.localScale = new Vector3(1, 1, 1);
+			if (playerSR.flipX == true) {
+				playerSR.flipX = false;
+			}
+            //transform.localScale = new Vector3(1, 1, 1);
 
         }
         if (Input.GetKeyDown(KeyCode.Space)) {

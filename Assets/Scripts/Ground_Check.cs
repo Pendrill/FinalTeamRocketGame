@@ -16,7 +16,7 @@ public class Ground_Check : MonoBehaviour {
 		// HIGHLY RECOMMEND replacing your grounded check with a raycast instead of triggers
 		// triggers aren't really the most stable for this
 		// grounded checks are traditionally done with a very short downwards raycast below the player's feet
-		RaycastHit2D groundHit = Physics2D.Raycast (transform.position,-transform.up,2f);
+		RaycastHit2D groundHit = Physics2D.Raycast (transform.position,-transform.up,3f);
         if (groundHit.collider != null)
         {
             player.grounded = true;
