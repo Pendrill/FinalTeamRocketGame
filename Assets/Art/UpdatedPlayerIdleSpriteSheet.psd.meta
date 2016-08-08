@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 319607391c41a3d48aed64fc91d1b7e0
-timeCreated: 1470246915
+timeCreated: 1470553692
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -22,7 +22,7 @@ TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -59,7 +59,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 26
+  spritePixelsToUnits: 20
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -68,284 +68,174 @@ TextureImporter:
     - name: UpdatedPlayerIdleSpriteSheet_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 10
         y: 0
-        width: 53
-        height: 53
+        width: 21
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -10.5, y: 26.5}
-        - {x: -15.5, y: 25.5}
-        - {x: -18.5, y: -4.5}
-        - {x: -18.5, y: -26.5}
-        - {x: 6.5, y: -26.5}
-        - {x: 6.5, y: 26.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 53
+        x: 59
         y: 0
-        width: 53
-        height: 53
+        width: 33
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 3.5, y: 26.5}
-        - {x: -9.5, y: 26.5}
-        - {x: -20.5, y: 17.5}
-        - {x: -21.5, y: -10.5}
-        - {x: -21.5, y: -26.5}
-        - {x: 6.5, y: -26.5}
-        - {x: 6.5, y: 23.5}
+      - - {x: -7.5, y: 26}
+        - {x: -14.5, y: 18}
+        - {x: -16.5, y: -7}
+        - {x: -16.5, y: -26}
+        - {x: 10.5, y: -26}
+        - {x: 10.5, y: 26}
     - name: UpdatedPlayerIdleSpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 106
+        x: 111
         y: 0
-        width: 53
-        height: 53
+        width: 27
+        height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8.5, y: 26.5}
-        - {x: -13.5, y: 22.5}
-        - {x: -14.5, y: 15.5}
-        - {x: -14.5, y: 12.5}
-        - {x: -23.5, y: -17.5}
-        - {x: -23.5, y: -23.5}
-        - {x: -18.5, y: -26.5}
-        - {x: 6.5, y: -26.5}
-        - {x: 7.5, y: -1.5}
-        - {x: 7.5, y: 25.5}
-        - {x: 4.5, y: 26.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_3
       rect:
         serializedVersion: 2
-        x: 159
+        x: 162
         y: 0
-        width: 53
-        height: 53
+        width: 29
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -13.5, y: 26.5}
-        - {x: -25.5, y: 4.5}
-        - {x: -25.5, y: -20.5}
-        - {x: -12.5, y: -26.5}
-        - {x: 6.5, y: -26.5}
-        - {x: 7.5, y: -8.5}
-        - {x: 7.5, y: 26.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 212
+        x: 216
         y: 0
-        width: 53
-        height: 53
+        width: 28
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11.5, y: 26.5}
-        - {x: -22.5, y: -1.5}
-        - {x: -24.5, y: -7.5}
-        - {x: -24.5, y: -22.5}
-        - {x: -17.5, y: -26.5}
-        - {x: 7.5, y: -26.5}
-        - {x: 7.5, y: 26.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 265
+        x: 269
         y: 0
-        width: 53
-        height: 53
+        width: 28
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -18.5, y: 26.5}
-        - {x: -24.5, y: 14.5}
-        - {x: -24.5, y: -20.5}
-        - {x: -10.5, y: -26.5}
-        - {x: 7.5, y: -26.5}
-        - {x: 7.5, y: 26.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_6
       rect:
         serializedVersion: 2
-        x: 318
+        x: 322
         y: 0
-        width: 53
-        height: 53
+        width: 28
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 6.5, y: 24.5}
-        - {x: 5.5, y: 26.5}
-        - {x: -11.5, y: 26.5}
-        - {x: -19.5, y: 23.5}
-        - {x: -24.5, y: -1.5}
-        - {x: -24.5, y: -20.5}
-        - {x: -12.5, y: -26.5}
-        - {x: 6.5, y: -26.5}
-        - {x: 6.5, y: -24.5}
-        - {x: 7.5, y: -5.5}
-        - {x: 7.5, y: 9.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 371
+        x: 372
         y: 0
-        width: 53
-        height: 53
+        width: 31
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 5.5, y: 26.5}
-        - {x: -9.5, y: 26.5}
-        - {x: -15.5, y: 19.5}
-        - {x: -15.5, y: 15.5}
-        - {x: -25.5, y: 3.5}
-        - {x: -26.5, y: 1.5}
-        - {x: -26.5, y: -13.5}
-        - {x: -21.5, y: -26.5}
-        - {x: 6.5, y: -26.5}
-        - {x: 7.5, y: -18.5}
-        - {x: 7.5, y: 22.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 424
+        x: 425
         y: 0
-        width: 53
-        height: 53
+        width: 31
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -13.5, y: 26.5}
-        - {x: -26.5, y: 12.5}
-        - {x: -26.5, y: -22.5}
-        - {x: -24.5, y: -26.5}
-        - {x: 7.5, y: -26.5}
-        - {x: 7.5, y: 26.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_9
       rect:
         serializedVersion: 2
-        x: 477
+        x: 481
         y: 0
-        width: 53
-        height: 53
+        width: 28
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -16.5, y: 26.5}
-        - {x: -24.5, y: 16.5}
-        - {x: -24.5, y: -20.5}
-        - {x: -19.5, y: -26.5}
-        - {x: 7.5, y: -26.5}
-        - {x: 7.5, y: 26.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 530
+        x: 534
         y: 0
-        width: 53
-        height: 53
+        width: 28
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -11.5, y: 26.5}
-        - {x: -22.5, y: -1.5}
-        - {x: -24.5, y: -7.5}
-        - {x: -24.5, y: -22.5}
-        - {x: -17.5, y: -26.5}
-        - {x: 7.5, y: -26.5}
-        - {x: 7.5, y: 26.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 583
+        x: 586
         y: 0
-        width: 53
-        height: 53
+        width: 29
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -13.5, y: 26.5}
-        - {x: -25.5, y: 4.5}
-        - {x: -25.5, y: -20.5}
-        - {x: -12.5, y: -26.5}
-        - {x: 6.5, y: -26.5}
-        - {x: 7.5, y: -8.5}
-        - {x: 7.5, y: 26.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_12
       rect:
         serializedVersion: 2
-        x: 636
+        x: 641
         y: 0
-        width: 53
-        height: 53
+        width: 27
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8.5, y: 26.5}
-        - {x: -13.5, y: 22.5}
-        - {x: -14.5, y: 15.5}
-        - {x: -14.5, y: 12.5}
-        - {x: -23.5, y: -17.5}
-        - {x: -23.5, y: -23.5}
-        - {x: -18.5, y: -26.5}
-        - {x: 6.5, y: -26.5}
-        - {x: 7.5, y: -1.5}
-        - {x: 7.5, y: 25.5}
-        - {x: 4.5, y: 26.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 689
+        x: 696
         y: 0
-        width: 53
-        height: 53
+        width: 24
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 3.5, y: 26.5}
-        - {x: -9.5, y: 26.5}
-        - {x: -20.5, y: 17.5}
-        - {x: -21.5, y: -10.5}
-        - {x: -21.5, y: -26.5}
-        - {x: 6.5, y: -26.5}
-        - {x: 6.5, y: 23.5}
+      outline: []
     - name: UpdatedPlayerIdleSpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 742
+        x: 752
         y: 0
-        width: 53
-        height: 53
+        width: 21
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -10.5, y: 26.5}
-        - {x: -15.5, y: 25.5}
-        - {x: -18.5, y: -4.5}
-        - {x: -18.5, y: -26.5}
-        - {x: 6.5, y: -26.5}
-        - {x: 6.5, y: 26.5}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

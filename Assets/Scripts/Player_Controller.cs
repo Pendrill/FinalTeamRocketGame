@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player_Controller : MonoBehaviour {
     //Floats
-    public float maxSpeed = 300;
+    public float maxSpeed = 100;
     public float speed = 50f;
     public float jumpPower = 150;
     public float dashPower = 200;
@@ -12,6 +12,7 @@ public class Player_Controller : MonoBehaviour {
     //Booleans
     public bool grounded;
     public bool canDoubleJump;
+	public bool rolling;
 
     private Rigidbody2D playerRB;
     private Animator anim;
@@ -29,6 +30,7 @@ public class Player_Controller : MonoBehaviour {
 	void Update () {
 		coolDown += Time.deltaTime;
         anim.SetBool("Grounded",grounded);
+		anim.SetBool ("Rolling",rolling);
         anim.SetFloat("Speed", Mathf.Abs( playerRB.velocity.x));
 		// TODO add Coroutine to dash to stop collider
         if (Input.GetKeyDown(KeyCode.E))
@@ -38,10 +40,11 @@ public class Player_Controller : MonoBehaviour {
 				//playerRB.AddForce(Vector2.right * (dashPower * Time.deltaTime));
 				playerRB.AddForce (new Vector2 (dashPower, 0));
 				coolDown = 0;
-			}
+				//rolling = true;
+			} 
 
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+         if(Input.GetKeyDown(KeyCode.Q))
         {
 			if (coolDown >= 2) {
 				//deactivate the boxCollider.
@@ -51,9 +54,15 @@ public class Player_Controller : MonoBehaviour {
 				//body.AddForce(new Vector2(dodgeForce, 0));
 				playerRB.AddForce (new Vector2 (-dashPower, 0));
 				coolDown = 0;
-			}
+				//rolling = true;
+			} 
 
         }
+		if (Input.GetKey (KeyCode.E) && coolDown >= 2) {
+			rolling = true;
+		} else {
+			rolling = false;
+		}
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Q))
         {
@@ -98,7 +107,7 @@ public class Player_Controller : MonoBehaviour {
         Vector3 easeVelocity = playerRB.velocity;
         easeVelocity.y = playerRB.velocity.y;
         easeVelocity.z = 0.0f;
-        easeVelocity.x *= 0.5f;
+        easeVelocity.x *= 0.75f;
 
         //float hor = Input.GetAxis("Horizontal");
         float hor = 0;
@@ -125,6 +134,16 @@ public class Player_Controller : MonoBehaviour {
         // create fake friction on x axis
         playerRB.velocity = easeVelocity;
        
+		//Control speed
+		if (playerRB.velocity.x > maxSpeed) {
+			playerRB.velocity = new Vector2 (maxSpeed, playerRB.velocity.y);
+			
+		}
+		if (playerRB.velocity.x < -maxSpeed) {
+			
+			playerRB.velocity = new Vector2 (-maxSpeed, playerRB.velocity.y);
+
+		}
 
        
 
