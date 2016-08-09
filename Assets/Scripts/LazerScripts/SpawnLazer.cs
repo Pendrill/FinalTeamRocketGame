@@ -6,7 +6,7 @@ public class SpawnLazer : MonoBehaviour {
 	public Transform spawner;
 	public GameObject lazer;
 	public GameObject lazerInWorld;
-	public Button lazerButton;
+	//public Button lazerButton;
 	//GameObject player;
 	//Transform playerT;
 	// Use this for initialization
@@ -21,9 +21,12 @@ public class SpawnLazer : MonoBehaviour {
 		lazerInWorld = GameObject.FindGameObjectWithTag ("Lazer");
 		if (lazerInWorld == null) {
 			//If there is not then we can enable the player to create a new lazer by clicking the button
-			lazerButton.interactable = true;
+			//lazerButton.interactable = true;
 		} else {
-			lazerButton.interactable = false;
+			//lazerButton.interactable = false;
+		}
+		if(Input.GetMouseButtonDown(1)){
+			shootLazer();
 		}
 	}
 	public void shootLazer(){
