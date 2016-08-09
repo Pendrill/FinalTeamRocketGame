@@ -11,9 +11,13 @@ public class Player_Health : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        // everyone starts at 100% health at the start
-        currentHealth = maxHealth;
-
+		if (PlayerPrefs.GetInt ("Player Health") != null) {
+			currentHealth = PlayerPrefs.GetInt ("Player Health");
+			//PlayerPrefs.DeleteKey ("Player Health");
+		} else {
+			// everyone starts at 100% health at the start
+			currentHealth = maxHealth;
+		}
     }
 	void Update(){
 		textHealth.text = "Health: " + currentHealth + "%";
@@ -34,4 +38,7 @@ public class Player_Health : MonoBehaviour {
 			SceneManager.LoadScene(1);
 		}
     }
+	public int GetHealth(){
+		return currentHealth;
+	}
 }
