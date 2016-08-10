@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 09c5b21a604fd5c488b6821685a5db19
-timeCreated: 1470250777
-=======
-guid: 0db0cee47bb8a7341b0b732adbcdaee4
-timeCreated: 1470249709
->>>>>>> origin/Omar'sBranch
-licenseType: Free
+guid: 41ea8d4c2f293ab4abdaca4bd620284d
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
@@ -35,7 +28,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -51,13 +44,11 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-<<<<<<< HEAD
     serializedVersion: 2
-=======
->>>>>>> origin/Omar'sBranch
     sprites: []
     outline: []
   spritePackingTag: 
