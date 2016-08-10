@@ -8,7 +8,7 @@ public class trapBladeControls : MonoBehaviour {
 	private float stopSwingingAtThisTime = 0.0f;
 	//speed adjustor
 	public float swingSpeed = 1.0f;
-	public Button bladeButton;
+	//public Button bladeButton;
 	public BoxCollider2D bladeBoxCollider2D;
 
 	void Start() {
@@ -18,14 +18,16 @@ public class trapBladeControls : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-	
+		//if (Input.GetMouseButtonDown (0)) {
+		//	toggle ();
+		//}
 
 
 		//if current time is less than the current time +2 seconds, activate
 		if (Time.time < stopSwingingAtThisTime) {
 
 
-			bladeButton.interactable = false;
+			//bladeButton.interactable = false;
 			bladeBoxCollider2D.enabled = true;
 			transform.Rotate (transform.forward * Time.deltaTime * swingSpeed);
 
@@ -34,7 +36,11 @@ public class trapBladeControls : MonoBehaviour {
 
 
 		} else {
-			bladeButton.interactable = true;
+
+			if (Input.GetMouseButtonDown (0)) {
+				toggle ();
+			}
+			//bladeButton.interactable = true;
 			bladeBoxCollider2D.enabled = false;
 		}
 
