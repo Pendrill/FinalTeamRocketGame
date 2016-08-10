@@ -95,7 +95,7 @@ public class Improved_Player : MonoBehaviour {
                 {
                     canDoubleJump = false;
                     playerRB.velocity = new Vector2(playerRB.velocity.x, 0);
-                    playerRB.AddForce(Vector2.up * jumpPower);
+					playerRB.AddForce(Vector2.up * jumpPower / 1.5f);
                     //GetComponent<AudioSource> ().Play ();
                 }
 
