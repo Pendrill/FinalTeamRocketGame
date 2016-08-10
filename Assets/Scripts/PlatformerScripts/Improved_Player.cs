@@ -22,6 +22,8 @@ public class Improved_Player : MonoBehaviour {
     private Rigidbody2D playerRB;
     private Animator anim;
     private SpriteRenderer playerSR;
+	private AudioSource sound;
+	public AudioClip jump;
 
     // Use this for initialization
     void Start () {
@@ -30,6 +32,7 @@ public class Improved_Player : MonoBehaviour {
         playerRB = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animator>();
         playerSR = gameObject.GetComponent<SpriteRenderer>();
+		sound = gameObject.GetComponent<AudioSource> ();
     }
 	
 	// Update is called once per frame
@@ -39,7 +42,7 @@ public class Improved_Player : MonoBehaviour {
         anim.SetBool("Grounded", grounded);
         anim.SetFloat("Speed", Mathf.Abs(playerRB.velocity.x));
 		anim.SetBool ("Evading",evading);
-		Debug.Log ("Speed is " + evasionTime);
+		//Debug.Log ("Speed is " + evasionTime);
 
 
 
@@ -113,7 +116,8 @@ public class Improved_Player : MonoBehaviour {
             {
                 playerRB.AddForce(Vector2.up * jumpPower);
                 canDoubleJump = true;
-                //GetComponent<AudioSource> ().Play ();
+                // GetComponent<AudioSource> ().Play ();
+				sound.PlayOneShot (jump);
 
             }
             else {
@@ -122,7 +126,8 @@ public class Improved_Player : MonoBehaviour {
                     canDoubleJump = false;
                     playerRB.velocity = new Vector2(playerRB.velocity.x, 0);
 					playerRB.AddForce(Vector2.up * jumpPower /1.3f);
-                    //GetComponent<AudioSource> ().Play ();
+                   // GetComponent<AudioSource> ().Play ();
+					sound.PlayOneShot (jump);
                 }
 
             }
@@ -174,12 +179,5 @@ public class Improved_Player : MonoBehaviour {
 
 
     }
-	void ProcessEvasion(){
-//		evasionTime -= Time.deltaTime;
-//		if (evasionTime > 0) {
-//			evading = true;
-//		} else if (evasionTime <= 0) {
-//			evading = false;
-//		}
-	}
+
 }
