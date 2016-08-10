@@ -6,7 +6,8 @@ public class SpawnLazer : MonoBehaviour {
 	public Transform spawner;
 	public GameObject lazer;
 	public GameObject lazerInWorld;
-	public Button lazerButton;
+	bool canShoot = true;
+	//public Button lazerButton;
 	//GameObject player;
 	//Transform playerT;
 	// Use this for initialization
@@ -19,15 +20,23 @@ public class SpawnLazer : MonoBehaviour {
 	void Update () {
 		//We need to check if there is already a lazer in the scene
 		lazerInWorld = GameObject.FindGameObjectWithTag ("Lazer");
-		if (lazerInWorld == null) {
-			//If there is not then we can enable the player to create a new lazer by clicking the button
-			lazerButton.interactable = true;
+		if (canShoot==true&&Input.GetMouseButtonDown(1)) {
+			canShoot = false;
+			StartCoroutine (waitLazer());
+			shootLazer();
+
 		} else {
-			lazerButton.interactable = false;
+			//lazerButton.interactable = false;
 		}
+
 	}
 	public void shootLazer(){
 		//When the button is pressed, the lazer will be created slightly in from of the purple lazer spawner
 		Instantiate (lazer, spawner.position , spawner.rotation);
+	}
+
+	IEnumerator waitLazer(){
+		yield return new WaitForSeconds (1);
+		canShoot = true;
 	}
 }

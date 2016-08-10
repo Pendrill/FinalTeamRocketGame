@@ -7,13 +7,17 @@ public class Improved_Player : MonoBehaviour {
     public float speed = 50f;
     public float jumpPower = 275f;
     public float dashPower = 200;
+	public float evasionTime = 0;
+	//public float coolDownTimer = 3;
     float coolDown = 2;
+
 
     
 
     //Booleans
     public bool grounded;
     public bool canDoubleJump;
+	public bool evading = false;
     //References
     private Rigidbody2D playerRB;
     private Animator anim;
@@ -31,8 +35,13 @@ public class Improved_Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         coolDown += Time.deltaTime;
+		evasionTime -= Time.deltaTime;
         anim.SetBool("Grounded", grounded);
         anim.SetFloat("Speed", Mathf.Abs(playerRB.velocity.x));
+		anim.SetBool ("Evading",evading);
+		Debug.Log ("Speed is " + evasionTime);
+
+
 
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -42,7 +51,16 @@ public class Improved_Player : MonoBehaviour {
                 //playerRB.AddForce(Vector2.right * (dashPower * Time.deltaTime));
                 playerRB.AddForce(new Vector2(dashPower, 0));
                 coolDown = 0;
+				//evasionTime = 3;
+
                 //rolling = true;
+				//evasionTime -= Time.deltaTime;
+//				if (evasionTime == 3) {
+//					evading = true;
+//				} else {
+//					evading = false;
+//				}
+
             }
 
         }
@@ -57,7 +75,15 @@ public class Improved_Player : MonoBehaviour {
                 //body.AddForce(new Vector2(dodgeForce, 0));
                 playerRB.AddForce(new Vector2(-dashPower, 0));
                 coolDown = 0;
-                //rolling = true;
+//				evasionTime = 3;
+//				//Debug.Log ("Speed is " + playerRB.velocity.x);
+//                //rolling = true;
+//				if (evasionTime == 3) {
+//					evading = true;
+//				} else {
+//					evading = false;
+//				}
+
             }
 
         }
@@ -95,7 +121,7 @@ public class Improved_Player : MonoBehaviour {
                 {
                     canDoubleJump = false;
                     playerRB.velocity = new Vector2(playerRB.velocity.x, 0);
-					playerRB.AddForce(Vector2.up * jumpPower / 1.5f);
+					playerRB.AddForce(Vector2.up * jumpPower /1.3f);
                     //GetComponent<AudioSource> ().Play ();
                 }
 
@@ -125,11 +151,10 @@ public class Improved_Player : MonoBehaviour {
 
         }
         // Create friction
-        if (grounded)
-        {
+       
             playerRB.velocity = slowVel;
 
-        }
+        
         // move player
         playerRB.AddForce((Vector2.right * speed) * hor);
 
@@ -149,4 +174,12 @@ public class Improved_Player : MonoBehaviour {
 
 
     }
+	void ProcessEvasion(){
+//		evasionTime -= Time.deltaTime;
+//		if (evasionTime > 0) {
+//			evading = true;
+//		} else if (evasionTime <= 0) {
+//			evading = false;
+//		}
+	}
 }
