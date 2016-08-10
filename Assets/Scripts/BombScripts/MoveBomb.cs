@@ -19,7 +19,7 @@ public class MoveBomb : MonoBehaviour {
 			Vector3 cursorPositionInWorld = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 			cursorPositionInWorld.z = 0f;
 			transform.position = cursorPositionInWorld;
-			if (Input.GetMouseButtonUp (0)) {
+			if (Input.GetMouseButtonUp (2)) {
 				animator.SetTrigger ("BombCountdown");
 				dropBomb ();
 			}
