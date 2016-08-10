@@ -169,6 +169,7 @@ public class Improved_Player : MonoBehaviour {
             playerRB.velocity = new Vector2(maxSpeed, playerRB.velocity.y);
 
 
+
         }
         if (playerRB.velocity.x < -maxSpeed)
         {
