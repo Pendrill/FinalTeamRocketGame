@@ -27,7 +27,7 @@ public class MoveBomb : MonoBehaviour {
 		} else {
 			StartCoroutine (bombExplode());
 			//This Debug.Log isn't exactly informative.
-			Debug.Log ("When does this appear");
+			//Debug.Log ("When does this appear");
 		}
 	}
 	public void dropBomb(){
