@@ -21,17 +21,18 @@ public class rotate : MonoBehaviour {
 		// you should write comments about what this code does
 		delay += Time.deltaTime;
 		// you should write comments about what this code does
-		if(Input.GetKeyDown(KeyCode.LeftArrow)&&ourrigidbody.angularVelocity==0f&&delay>=delaysecs){
+		if (Input.GetKey (KeyCode.LeftArrow) && ourrigidbody.angularVelocity == 0f && delay >= delaysecs) {
 			inrotation = true;
-			ourrigidbody.AddTorque(torque);
-		}
-		if(Input.GetKeyDown(KeyCode.RightArrow)&&ourrigidbody.angularVelocity==0f&&delay>=delaysecs){
+			ourrigidbody.AddTorque (torque);
+		} else if (Input.GetKey (KeyCode.RightArrow) && ourrigidbody.angularVelocity == 0f && delay >= delaysecs) {
 			inrotation = true;
-			ourrigidbody.AddTorque(-1f*torque);
+			ourrigidbody.AddTorque (-1f * torque);
 
+		} else {
+			ourrigidbody.angularVelocity = 0;
 		}
 		// you should write comments about what this code does
-		if (inrotation == true) {
+	/*	if (inrotation == true) {
 			counter += Time.deltaTime;
 			// you should write comments about what this code does
 			if (counter >= rotationtime) {
@@ -40,7 +41,7 @@ public class rotate : MonoBehaviour {
 				inrotation = false;
 				delay = 0;
 			}
-		}
+		} */
 			
 
 
