@@ -1,17 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: ce00b1c4878ca473a88a392327d1b214
-timeCreated: 1470249835
-=======
-<<<<<<< HEAD
-guid: 4e6a23c2e6329544593a6cb1791d4336
-timeCreated: 1470250778
-=======
-guid: 20d77dace394d7f42862372c6fafea3d
-timeCreated: 1470249709
->>>>>>> origin/Omar'sBranch
->>>>>>> 86e50e49dd54e71ce32ce9f62b5e73d460c7a9e2
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
@@ -39,12 +27,8 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-<<<<<<< HEAD
+    filterMode: 0
     aniso: 16
-=======
-    aniso: -1
->>>>>>> 86e50e49dd54e71ce32ce9f62b5e73d460c7a9e2
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -60,16 +44,16 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     serializedVersion: 2
-=======
->>>>>>> origin/Omar'sBranch
->>>>>>> 86e50e49dd54e71ce32ce9f62b5e73d460c7a9e2
     sprites: []
     outline: []
   spritePackingTag: 
