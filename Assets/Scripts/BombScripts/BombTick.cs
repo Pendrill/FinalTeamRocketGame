@@ -13,8 +13,10 @@ public class BombTick : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//checks if the player clicks and thus drops the bomb
 		if (GetComponent<MoveBomb> ().isBombDroped () && counter == 0) {
 			counter++;
+			//will play the ticking sound
 			while(count!=3){
 				tick.Play ();//ick.clip);
 				count++;
@@ -22,6 +24,7 @@ public class BombTick : MonoBehaviour {
 			}
 		}
 	}
+	// This function is no longer in use
 	IEnumerator playTick(){
 		while (count != 3) {
 			tick.PlayOneShot (tick.clip);

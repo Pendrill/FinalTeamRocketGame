@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 public class cheatCodes : MonoBehaviour {
 	
-
+	//The players can jump to any of the scenes in the game by pressing 1,2,3,4, or t.
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Alpha1)) {
 			PlayerPrefs.SetInt ("Player Health", 100);

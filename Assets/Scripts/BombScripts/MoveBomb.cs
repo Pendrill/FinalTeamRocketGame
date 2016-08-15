@@ -14,16 +14,18 @@ public class MoveBomb : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//What is this doing?
+		//We are checking if the bomb is still being moved by the DM
 		if (isPlayerMovingBomb) {
+			//Bomb follows the mouse cursor
 			Vector3 cursorPositionInWorld = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 			cursorPositionInWorld.z = 0f;
 			transform.position = cursorPositionInWorld;
+			//player drops the bomb
 			if (Input.GetMouseButtonUp (2)) {
 				animator.SetTrigger ("BombCountdown");
 				dropBomb ();
 			}
-		//Good place for a comment
+		//player dropped the bomb
 		} else {
 			StartCoroutine (bombExplode());
 			//This Debug.Log isn't exactly informative.
@@ -31,11 +33,11 @@ public class MoveBomb : MonoBehaviour {
 		}
 	}
 	public void dropBomb(){
-		//Comment this function!
+		//the bomb has been dropped, so it should no longer be affect by the mouse
 		isPlayerMovingBomb = false;
 	}
 	public bool isBombDroped(){
-		//This one too.
+		//we check if the bomb is still being manipulated by the Dm. If no return true
 		if (isPlayerMovingBomb == false) {
 			return true;
 		} else {
