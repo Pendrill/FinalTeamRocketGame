@@ -46,49 +46,7 @@ public class Improved_Player : MonoBehaviour {
 
 
 
-		if (Input.GetKeyDown (KeyCode.E)) {
-			if (coolDown >= 2) {
-				//hor = 1;
-				//playerRB.AddForce(Vector2.right * (dashPower * Time.deltaTime));
-				playerRB.AddForce (new Vector2 (dashPower, 0));
-				coolDown = 0;
-				evading = true;
-				//evasionTime = 3;
 
-				//rolling = true;
-				//evasionTime -= Time.deltaTime;
-//				if (evasionTime == 3) {
-//					evading = true;
-//				} else {
-//					evading = false;
-//				}
-
-			}
-
-		} else if (Input.GetKeyDown (KeyCode.Q)) {
-			if (coolDown >= 2) {
-				//deactivate the boxCollider.
-				//StartCoroutine (deactivateCollider ());
-				//hor = -1;
-				//playerRB.AddForce(Vector2.left * (dashPower * Time.deltaTime));
-				//body.AddForce(new Vector2(dodgeForce, 0));
-				playerRB.AddForce (new Vector2 (-dashPower, 0));
-				coolDown = 0;
-				evading = true;
-//				evasionTime = 3;
-//				//Debug.Log ("Speed is " + playerRB.velocity.x);
-//                //rolling = true;
-//				if (evasionTime == 3) {
-//					evading = true;
-//				} else {
-//					evading = false;
-//				}
-
-			}
-
-		} else {
-			evading = false;
-		}
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.Q))
         {
             //transform.localScale = new Vector3(-1, 1, 1);
@@ -155,8 +113,9 @@ public class Improved_Player : MonoBehaviour {
 
         }
         // Create friction
-       
-            playerRB.velocity = slowVel;
+
+
+			playerRB.velocity = slowVel;
 
         
         // move player
@@ -176,6 +135,49 @@ public class Improved_Player : MonoBehaviour {
 
 
         }
+		if (Input.GetKeyDown (KeyCode.E)) {
+			if (coolDown >= 2) {
+				//hor = 1;
+				//playerRB.AddForce(Vector2.right * (dashPower * Time.deltaTime));
+				playerRB.AddForce (new Vector2 (dashPower, 0));
+				coolDown = 0;
+				evading = true;
+				//evasionTime = 3;
+
+				//rolling = true;
+				//evasionTime -= Time.deltaTime;
+				//				if (evasionTime == 3) {
+				//					evading = true;
+				//				} else {
+				//					evading = false;
+				//				}
+
+			}
+
+		} else if (Input.GetKeyDown (KeyCode.Q)) {
+			if (coolDown >= 2) {
+				//deactivate the boxCollider.
+				//StartCoroutine (deactivateCollider ());
+				//hor = -1;
+				//playerRB.AddForce(Vector2.left * (dashPower * Time.deltaTime));
+				//body.AddForce(new Vector2(dodgeForce, 0));
+				playerRB.AddForce (new Vector2 (-dashPower, 0));
+				coolDown = 0;
+				evading = true;
+				//				evasionTime = 3;
+				//				//Debug.Log ("Speed is " + playerRB.velocity.x);
+				//                //rolling = true;
+				//				if (evasionTime == 3) {
+				//					evading = true;
+				//				} else {
+				//					evading = false;
+				//				}
+
+			}
+
+		} else {
+			evading = false;
+		}
 
 
     }
