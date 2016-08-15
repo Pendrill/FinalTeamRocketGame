@@ -12,10 +12,10 @@ public class UseDoor : MonoBehaviour {
 
 	void OnTriggerStay2D( Collider2D player){
 		if (player.tag == "Player") {
-			if (Input.GetKeyDown (KeyCode.W)) {
+			
 				PlayerPrefs.SetInt ("Player Health", player.GetComponent<Player_Health> ().GetHealth());
 				SceneManager.LoadScene (whichSceneToLoad);
-			}
+
 		}
 	}
 }
