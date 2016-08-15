@@ -4,6 +4,6 @@ using UnityEngine.SceneManagement;
 public class GoToFirstLevel : MonoBehaviour {
 
 	public void StartLevelOne(){
-		SceneManager.LoadScene (3);
+		SceneManager.LoadScene (5);
 	}
 }
