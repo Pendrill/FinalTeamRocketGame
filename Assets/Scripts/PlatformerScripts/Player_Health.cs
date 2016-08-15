@@ -40,7 +40,7 @@ public class Player_Health : MonoBehaviour {
 		{
 			//Destroy(gameObject);
 			//move to the game over screen
-			SceneManager.LoadScene(6);
+			SceneManager.LoadScene(7);
 		}
     }
 	public int GetHealth(){
