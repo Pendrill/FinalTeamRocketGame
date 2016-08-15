@@ -10,6 +10,7 @@ public class ExitGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//The game will close if escape is pressed
 		if (Input.GetKey (KeyCode.Escape)) {
 			Application.Quit ();
 		}

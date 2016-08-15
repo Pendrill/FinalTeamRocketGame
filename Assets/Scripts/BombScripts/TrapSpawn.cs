@@ -9,6 +9,7 @@ public class TrapSpawn : MonoBehaviour {
 	public GameObject BombPrefab;
 	void Update(){
 		BombInWorld = GameObject.FindGameObjectWithTag ("Bomber");
+		//checks to see how many bombs there are in the scene, to see if the DM can create an other
 		if (nextBomb&&BombInWorld==null) {
 			if (Input.GetMouseButtonDown (2)) {
 				createTrap (BombPrefab);
@@ -18,6 +19,7 @@ public class TrapSpawn : MonoBehaviour {
 	public void createTrap (GameObject Bomb){
 		if (nextBomb && BombInWorld == null) {
 			//bombButton.interactable == true;
+			//a new bomb is created at the mouse's position
 			Instantiate (Bomb, Camera.main.ScreenToWorldPoint (Input.mousePosition), Bomb.transform.rotation);
 			//bombButton.interactable = false;
 			nextBomb = false;
